@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       </Head>
       <main className=" min-h-screen  bg-gradient-to-b from-[#2e026d] to-[#15162c] ">
         <NavBar />
-        <p>hi</p>
+        <p>hi lol</p>
       </main>
     </>
   );
