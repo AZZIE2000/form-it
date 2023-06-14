@@ -26,7 +26,7 @@ const FormBuilder: NextPage<FormBuilderProps> = memo(({ data }) => {
             <>
               <div className="divider">{item.name}</div>
               <FormBuilder data={item.childern} />
-              {/* <div className="divider">{item.name}</div> */}
+            
             </>
           );
         } else if (item.inputType === "text") {
