@@ -16,7 +16,7 @@ interface FormBuilderProps {
 
 const FormBuilder: NextPage<FormBuilderProps> = memo(({ data }) => {
   console.log("data 🔥🔥", data);
-  // return <></>;
+
 
   return (
     <div>
