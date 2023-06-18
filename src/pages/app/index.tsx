@@ -18,7 +18,20 @@ interface DATA {
 }
 
 const Index: NextPage = memo(() => {
-  const [json, setJson] = useState("{}");
+  const [json, setJson] = useState(`{
+    "name": "Azzie",
+    "email": "azzam.faraj0@gmail.com",
+    "age": 25,
+    "hoppies": [
+        "swimming",
+        "chees"
+    ],
+    "info": {
+        "phone":  "0778086316",
+        "adreess": "Amman",
+        "isMarried": true
+    }
+}`);
   const [jsonRes, setJsonRes] = useState<DATA[] | undefined>(undefined);
   const [loading, setLoading] = useState(false);
 
@@ -35,9 +48,6 @@ const Index: NextPage = memo(() => {
       console.error(error);
     }
   };
-  useEffect(() => {
-    console.log("🚀🚀🚀", jsonRes);
-  }, [jsonRes]);
 
   return (
     <>
