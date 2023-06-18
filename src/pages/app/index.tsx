@@ -28,7 +28,7 @@ const Index: NextPage = memo(() => {
     ],
     "info": {
         "phone":  "0778086316",
-        "adreess": "Amman",
+        "adreess": "Amman - jordan",
         "isMarried": true
     }
 }`);
