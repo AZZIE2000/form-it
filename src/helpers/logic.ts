@@ -30,7 +30,7 @@ const handleChildren = (value: any, parent: string) => {
     if (value.length > 0) {
       if (typeof value[0] === "string") {
         return null;
-      } else {
+      } else {  
         const data: any = handleButton(JSON.stringify(value[0]), parent);
         if (data) return data as any;
       }
